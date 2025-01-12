@@ -24,6 +24,7 @@ function App() {
 
       if (response.ok) {
         alert("Registration successful!");
+        
         navigate("/upload"); // Redirect to the upload page
       } else {
         const errorData = await response.json();
