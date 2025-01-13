@@ -6,7 +6,7 @@ export default function UploadNumbers() {
   const [algorithm, setAlgorithm] = useState("select");
   const [results, setResults] = useState([]);
   const [method, setMethod] = useState("");
-  const [time, setTime] = useState("")
+  const [time, setTime] = useState("");
 
   const handleChangeNumbers = (e) => {
     setNumbers(e.target.value);
@@ -20,7 +20,7 @@ export default function UploadNumbers() {
     e.preventDefault();
     setResults([]);
     setMethod("");
-    setTime("")
+    setTime("");
 
     const numberList = numbers.split(" ").map(Number); // Split by space and convert to numbers
 
@@ -37,7 +37,7 @@ export default function UploadNumbers() {
       console.log("Response:", response.data);
       setMethod(response.data.Method);
       setResults(response.data.array);
-      setTime(response.data.time)
+      setTime(response.data.time);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -88,8 +88,10 @@ export default function UploadNumbers() {
 
         {results.length > 0 && (
           <div className="mt-4">
-            <h2>Method: {method}</h2>
-            <h2>Time: {response.data.Time}</h2>
+            <h2 className="text-xl font-semibold">Method:</h2>
+            <p>{method}</p>
+            <h2 className="text-xl font-semibold">Time:</h2>
+            <p> {time}</p>
             <h2 className="text-xl font-semibold">Sorted Numbers:</h2>
             <p className="text-gray-700">{results.join(", ")}</p>
           </div>
