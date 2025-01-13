@@ -1,8 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# React App
+## this react app need to be run using other microservices. All the details to run in a microservice environement can find in [here](https://github.com/KMjanith/SR-service-runner/blob/main/Readme.md). 
+### This front end contains 2 pages for basic registration functionality and give numbers and sort in variuos algorithems. 
