@@ -75,7 +75,7 @@ export default function UploadNumbers() {
               <option value="quick">Quick Sort</option>
               <option value="merge">Merge Sort</option>
               <option value="insertion">Insertion Sort</option>
-              <option value="select">Selection Sort</option>
+              <option value="selectionsort">Selection Sort</option>
             </select>
           </div>
           <button
