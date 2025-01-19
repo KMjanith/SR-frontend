@@ -43,6 +43,6 @@ jobs:
 
       - name: SSH into GCP VM and run deployment script
         run: |
-            ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_IP }} "cd service_runner && ./prodStart.sh"
+            ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_IP }} "cd SR-service-runner && ./prodStart.sh"
 
 
